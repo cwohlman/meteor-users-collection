@@ -4,6 +4,9 @@ Package.describe({
 
 Package.on_use(function (api, where) {
   api.use('templating');
+  api.use('accounts-base');
+  api.use('underscore');
+  
   api.add_files('users/both/collections/users.js', ['client', 'server']);
   api.add_files('users/client/helpers.js', 'client');
   api.add_files('users/server/collections/users.js', 'server');

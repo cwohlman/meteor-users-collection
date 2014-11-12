@@ -1,7 +1,7 @@
 Package.describe({
   summary: "Exposes the users collection as Users and provides collection and template helpers."
   , name: 'cwohlman:users-collection'
-  , version: "1.0.0"
+  , version: "1.0.1"
   , git: 'https://github.com/cwohlman/meteor-users-collection.git'
 });
 

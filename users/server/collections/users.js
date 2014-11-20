@@ -18,8 +18,9 @@ Users.allow({
 // this can't be overridden in your app (and you shouldn't).
 Users.deny({
   update: function (userId, doc, fieldNames) {
-    console.log(_.union(fieldNames, ['roles', 'services', 'emails']));
+    console.log('x');
+    console.log(_.intersection(fieldNames, ['roles', 'services', 'emails']));
     return !Users.isAdmin(userId) &&
-    _.union(fieldNames, ['roles', 'services', 'emails']).length;
+    _.intersection(fieldNames, ['roles', 'services', 'emails']).length;
   }
 });
